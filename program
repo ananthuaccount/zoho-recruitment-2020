@@ -6,7 +6,7 @@ public class printvariable
      string value = input.nextLine();
      int middle = (value.length()/2)+1;
      int length1 = value.length();
-     for(int i = 0;i < input.length();i++)
+     for(int i = 0;i < value.length();i++)
      {
      for(int k=1;k < length1 ;k++)
      {
