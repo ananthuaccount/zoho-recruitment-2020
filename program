@@ -31,3 +31,49 @@ public class printvariable
    } 
 }
 }
+
+
+////Below .Net code added ,,,
+
+class Program
+    {
+        static void Main(string[] args)
+        {
+            string input = "Welcome";
+
+            int middle = (input.Length / 2);
+
+            int position = 0;
+
+            int length1 = input.Length;
+
+            for (int i = 0; i < input.Length; i++)
+            {
+                for (int k = 1; k < length1; k++)
+                {
+                    Console.Write(" ");
+                }
+
+                length1--;
+
+                for (int j = 0; j <= i; j++)
+                {
+                    if (middle+j < input.Length)
+                    {
+                        Console.Write(input[middle + j]);
+
+                        position++;
+                    }
+                    else
+                    {
+                        Console.Write(input[0] + " ");
+
+                        middle = 0;
+
+                        position = 0;
+                    }
+                }
+                Console.WriteLine();
+            }
+          }
+    }
