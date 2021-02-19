@@ -1,0 +1,33 @@
+public class printvariable
+{
+  public static  void main(String args[])
+  {
+     Scanner input = new Scenner(System.in);
+     string value = input.nextLine();
+     int middle = (value.length()/2)+1;
+     int length1 = value.length();
+     for(int i = 0;i < input.length();i++)
+     {
+     for(int k=1;k < length1 ;k++)
+     {
+        System.out.print(" ");
+     }
+
+     for(int j=0; j<=i;j++)
+     {
+           if(middle < value.length())
+           {
+		System.out.print(input.charAt(middle));
+           	middle++;
+           }
+           else
+           {
+                System.out.print(input.charAt(0) + " ");
+                middle = 1;
+           }
+           
+     }   
+     System.out.println();        
+   } 
+}
+}
